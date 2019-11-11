@@ -1,0 +1,55 @@
+/*准备画板*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s;
+}
+
+body {
+  height: 100vh;
+}
+
+.htmlCode-wrapper {
+  height: 50%;
+  width: 100%;
+  background-color: #e8eaed;
+  padding: 10px;
+}
+
+.pikachu-wrapper {
+  height: 50%;
+  width: 100%;
+  background-color: #fee700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#htmlCode {
+  height: 100%;
+  overflow: auto;
+}
+
+/*设置变速按钮*/
+#changeSpeed {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#changeSpeed button {
+  background-color: #fee700;
+  width: 50px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  outline: none;
+}
+
+#changeSpeed button.active {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
